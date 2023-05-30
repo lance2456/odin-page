@@ -55,25 +55,40 @@ ul {
 .hero {
     width: 500px;
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main-text {
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 1000;
     color: #f9faf8;
+    display: flex;
+    flex-grow: 1;
 }
 
-.second-text, a, .img, .footer, .text {
+.second-text, a, .img, .footer, .text, .message {
     font-size: 18px;
     color: #e5e7eb;
     text-decoration: none;
+}
+
+.second-text {
+    display: flex;
+    flex-grow: 1;
+    text-align: justify;
 }
 
 button {
     border: none;
     border-radius: 8px;
     background: #3882f6;
-    padding: 8px 16px;
+    padding: 10px 42px;
+    color: #e5e7eb;
+    font-weight: 800;
+    font-size: 18px;
+    max-width: 200px;
   }
 
 .img {
@@ -88,6 +103,9 @@ button {
 .section-2 {
     display: block;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title {
@@ -96,11 +114,13 @@ button {
     color: #1f2937;
     display: flex;
     justify-content: center;
-    margin: 32px;
+    margin: 48px;
 }
 
 .items {
     display: flex;
+    flex-grow: 1;
+    align-items: flex-start;
     justify-content: center;
     gap: 52px;
 }
@@ -114,6 +134,7 @@ button {
 
 .text {
     color: #1f2937;
+    text-align: justify;
 }
 
 .square {
@@ -122,6 +143,67 @@ button {
     border: #3882f6;
     border-radius: 8px;
     border-style: solid;
+}
+
+.section-3 {
+    background-color: #e5e7eb;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    width: 800px;
+    text-align: justify; 
+}
+
+.author {
+    font-size: 24px;
+    color: #1f2937;
+    font-weight: 800;
+    width: 800px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-4 {
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 900px;
+    border-radius: 10px;
+    background-color: #3882f6;
+    padding: 48px;
+}
+
+.message-header, .message {
+padding-left: 60px;
+padding-right: 60px;
+}
+
+.message-header {
+    font-size: 22px;
+    font-weight: 800;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: -20px;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+button.message-button {
+    border-style: solid;
+    border-color: #e5e7eb;
 }
 
 .footer {
